@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.25" ClassName="CNestedPlcProjDef" TcProjectVariant="EIP">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{A6CC6AFE-FE37-C02D-2C0C-FB1479660FEB}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..31] OF BYTE</Name>
+			<BitSize>256</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>32</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<Project GUID="{A987F1FB-191F-41A7-8E00-0EB9EDEC5D48}" Name="PLC" PrjFilePath="..\..\PLC\PLC.plcproj" TmcFilePath="..\..\PLC\PLC.tmc" EnableImplicitDefines="true" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+		<ProjectVariant PvUseDefine="true">
+			<Variant>
+				<Name>EIP</Name>
+				<Name>NoGateWay</Name>
+				<Name>PN</Name>
+				<Defines></Defines>
+			</Variant>
+		</ProjectVariant>
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+			<Name>PLC Instance</Name>
+			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+			<Vars VarGrpType="1">
+				<Name>PlcTask Inputs</Name>
+				<Var>
+					<Name>MAIN.arPNIn</Name>
+					<Type GUID="{A6CC6AFE-FE37-C02D-2C0C-FB1479660FEB}">ARRAY [0..31] OF BYTE</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.arEIPIn</Name>
+					<Type GUID="{A6CC6AFE-FE37-C02D-2C0C-FB1479660FEB}">ARRAY [0..31] OF BYTE</Type>
+				</Var>
+			</Vars>
+			<Vars VarGrpType="2" AreaNo="1">
+				<Name>PlcTask Outputs</Name>
+				<Var>
+					<Name>MAIN.arPNOut</Name>
+					<Type GUID="{A6CC6AFE-FE37-C02D-2C0C-FB1479660FEB}">ARRAY [0..31] OF BYTE</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.arEIPOut</Name>
+					<Type GUID="{A6CC6AFE-FE37-C02D-2C0C-FB1479660FEB}">ARRAY [0..31] OF BYTE</Type>
+				</Var>
+			</Vars>
+			<Contexts>
+				<Context>
+					<Id NeedCalleeCall="true">0</Id>
+					<Name>PlcTask</Name>
+					<ManualConfig>
+						<OTCID>#x02010030</OTCID>
+					</ManualConfig>
+					<Priority>20</Priority>
+					<CycleTime>8000000</CycleTime>
+				</Context>
+			</Contexts>
+			<TaskPouOids>
+				<TaskPouOid Prio="20" OTCID="#x08502001"/>
+			</TaskPouOids>
+		</Instance>
+	</Project>
+	<Mappings>
+		<OwnerA Name="PLC Instance">
+			<OwnerB Name="TIID^Device 1 (Profinet Controller)^tcpniodevice">
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[0]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[0]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[10]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[10]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[11]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[11]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[12]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[12]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[13]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[13]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[14]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[14]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[15]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[15]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[16]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[16]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[17]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[17]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[18]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[18]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[19]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[19]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[1]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[1]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[20]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[20]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[21]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[21]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[22]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[22]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[23]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[23]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[24]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[24]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[25]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[25]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[26]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[26]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[27]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[27]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[28]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[28]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[29]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[29]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[2]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[2]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[30]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[30]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[31]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[31]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[3]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[3]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[4]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[4]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[5]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[5]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[6]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[6]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[7]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[7]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[8]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[8]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arPNIn[9]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Inputs^1 Byte Input[9]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[0]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[0]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[10]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[10]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[11]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[11]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[12]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[12]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[13]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[13]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[14]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[14]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[15]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[15]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[16]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[16]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[17]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[17]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[18]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[18]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[19]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[19]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[1]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[1]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[20]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[20]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[21]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[21]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[22]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[22]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[23]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[23]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[24]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[24]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[25]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[25]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[26]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[26]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[27]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[27]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[28]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[28]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[29]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[29]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[2]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[2]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[30]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[30]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[31]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[31]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[3]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[3]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[4]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[4]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[5]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[5]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[6]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[6]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[7]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[7]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[8]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[8]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arPNOut[9]" VarB="API^Term 2 (32 Byte In- and Output)^Subterm 4 (32 Byte In- and Output)^Outputs^1 Byte Output[9]"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 2 (TC3 EIP Scanner)^Box 2 (TC EtherNet/IP Slave)">
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[0]" VarB="Connection 1 (Input/Output)^Inputs^data[0]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[10]" VarB="Connection 1 (Input/Output)^Inputs^data[10]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[11]" VarB="Connection 1 (Input/Output)^Inputs^data[11]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[12]" VarB="Connection 1 (Input/Output)^Inputs^data[12]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[13]" VarB="Connection 1 (Input/Output)^Inputs^data[13]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[14]" VarB="Connection 1 (Input/Output)^Inputs^data[14]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[15]" VarB="Connection 1 (Input/Output)^Inputs^data[15]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[16]" VarB="Connection 1 (Input/Output)^Inputs^data[16]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[17]" VarB="Connection 1 (Input/Output)^Inputs^data[17]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[18]" VarB="Connection 1 (Input/Output)^Inputs^data[18]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[19]" VarB="Connection 1 (Input/Output)^Inputs^data[19]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[1]" VarB="Connection 1 (Input/Output)^Inputs^data[1]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[20]" VarB="Connection 1 (Input/Output)^Inputs^data[20]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[21]" VarB="Connection 1 (Input/Output)^Inputs^data[21]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[22]" VarB="Connection 1 (Input/Output)^Inputs^data[22]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[23]" VarB="Connection 1 (Input/Output)^Inputs^data[23]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[24]" VarB="Connection 1 (Input/Output)^Inputs^data[24]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[25]" VarB="Connection 1 (Input/Output)^Inputs^data[25]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[26]" VarB="Connection 1 (Input/Output)^Inputs^data[26]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[27]" VarB="Connection 1 (Input/Output)^Inputs^data[27]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[28]" VarB="Connection 1 (Input/Output)^Inputs^data[28]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[29]" VarB="Connection 1 (Input/Output)^Inputs^data[29]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[2]" VarB="Connection 1 (Input/Output)^Inputs^data[2]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[30]" VarB="Connection 1 (Input/Output)^Inputs^data[30]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[31]" VarB="Connection 1 (Input/Output)^Inputs^data[31]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[3]" VarB="Connection 1 (Input/Output)^Inputs^data[3]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[4]" VarB="Connection 1 (Input/Output)^Inputs^data[4]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[5]" VarB="Connection 1 (Input/Output)^Inputs^data[5]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[6]" VarB="Connection 1 (Input/Output)^Inputs^data[6]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[7]" VarB="Connection 1 (Input/Output)^Inputs^data[7]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[8]" VarB="Connection 1 (Input/Output)^Inputs^data[8]"/>
+				<Link VarA="PlcTask Inputs^MAIN.arEIPIn[9]" VarB="Connection 1 (Input/Output)^Inputs^data[9]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[0]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[0]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[10]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[10]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[11]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[11]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[12]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[12]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[13]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[13]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[14]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[14]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[15]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[15]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[16]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[16]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[17]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[17]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[18]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[18]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[19]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[19]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[1]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[1]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[20]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[20]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[21]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[21]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[22]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[22]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[23]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[23]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[24]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[24]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[25]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[25]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[26]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[26]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[27]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[27]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[28]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[28]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[29]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[29]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[2]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[2]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[30]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[30]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[31]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[31]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[3]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[3]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[4]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[4]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[5]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[5]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[6]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[6]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[7]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[7]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[8]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[8]"/>
+				<Link VarA="PlcTask Outputs^MAIN.arEIPOut[9]" VarB="Connection 1 (Input/Output)^Outputs^Var 239[9]"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
+</TcSmItem>

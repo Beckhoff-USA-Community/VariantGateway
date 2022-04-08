@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.25" ClassName="CDevEthernetProtocolEipSlaveDef" SubType="139" TcProjectVariant="EIP">
+	<Device Id="2" DevType="139" AmsPort="28674" AmsNetId="5.34.120.156.3.1" RemoteName="Device 2 (TC3 EIP Adapter)">
+		<Name>__FILENAME__</Name>
+		<ProjectVariant PvUseDisable="true" PvUseLink="true">
+			<Variant>
+				<Name>EIP</Name>
+				<Disable>0</Disable>
+				<AddressInfo PromiscuousMode="false" VirtualDeviceName="false">
+					<Pnp>
+						<DeviceDesc>X001 (TwinCAT-Intel PCI Ethernet Adapter (Gigabit) </DeviceDesc>
+						<DeviceName>\DEVICE\{2B75A514-5246-4FD3-9F4D-1887899893C2}</DeviceName>
+						<DeviceData>00010522789c</DeviceData>
+					</Pnp>
+				</AddressInfo>
+			</Variant>
+			<Variant>
+				<Name>NoGateway</Name>
+				<Name>PN</Name>
+				<Disable>1</Disable>
+				<AddressInfo PromiscuousMode="false" VirtualDeviceName="false">
+					<Pnp>
+						<DeviceDesc></DeviceDesc>
+						<DeviceName></DeviceName>
+						<DeviceData>000000000000</DeviceData>
+					</Pnp>
+				</AddressInfo>
+			</Variant>
+		</ProjectVariant>
+		<AddressInfo>
+			<Pnp>
+				<DeviceDesc>X001 (TwinCAT-Intel PCI Ethernet Adapter (Gigabit) </DeviceDesc>
+				<DeviceName>\DEVICE\{2B75A514-5246-4FD3-9F4D-1887899893C2}</DeviceName>
+				<DeviceData>00010522789c</DeviceData>
+			</Pnp>
+		</AddressInfo>
+		<Image Id="2" AddrType="1" ImageType="3">
+			<Name>Device 2 (TC3 EIP Adapter)-Image</Name>
+		</Image>
+		<Box File="Box 2 (TC EtherNet%_2FIP Slave).xti" Id="2"/>
+		<Ethernet DeviceDesc="X001 (TwinCAT-Intel PCI Ethernet Adapter (Gigabit) #2)"/>
+		<EtherNetIPSlaveDev/>
+	</Device>
+</TcSmItem>

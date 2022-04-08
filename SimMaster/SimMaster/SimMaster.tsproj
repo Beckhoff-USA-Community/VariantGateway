@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.25" TcProjectVariant="EIP">
+	<Project ProjectGUID="{2F7A28A2-D466-408B-B0BF-324873D34614}" TargetNetId="5.24.131.22.1.1" Target64Bit="true" ShowHideConfigurations="#x3c7">
+		<System>
+			<Tasks>
+				<Task Id="3" Priority="20" CycleTime="40000" AmsPort="350" AdtTasks="true">
+					<Name>PlcTask</Name>
+				</Task>
+			</Tasks>
+		</System>
+		<Plc>
+			<Project File="PLC.xti"/>
+		</Plc>
+		<Io>
+			<Device File="Device 1 (Profinet Controller).xti" Id="1"/>
+			<Device File="Device 2 (TC3 EIP Scanner).xti" Id="2"/>
+		</Io>
+		<Variants SpecificLocalBootFolder="true">
+			<Variant>
+				<Name>NoGateWay</Name>
+				<Desc><![CDATA[No gateway coms]]></Desc>
+			</Variant>
+			<Variant>
+				<Name>PN</Name>
+				<Desc><![CDATA[Profinet device option]]></Desc>
+			</Variant>
+			<Variant>
+				<Name>EIP</Name>
+				<Desc><![CDATA[EtherNET IP option]]></Desc>
+			</Variant>
+		</Variants>
+	</Project>
+	<Mappings>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500820000403}" Id="#x02030010"/>
+	</Mappings>
+</TcSmProject>

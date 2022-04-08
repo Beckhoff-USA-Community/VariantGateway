@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.10">
+  <DUT Name="ST_ControlBits" Id="{3a52b27a-50f8-4ef4-aa2c-7ace4e4ce625}">
+    <Declaration><![CDATA[TYPE ST_ControlBits :
+STRUCT
+	Start		:BIT;
+	Stop		:BIT;
+	Reset 		:BIT;
+	bit4		:BIT;
+	bit5		:BIT;
+	bit6		:BIT;
+	bit7		:BIT;
+	bit8		:BIT;	
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

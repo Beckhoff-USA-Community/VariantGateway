@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.10">
+  <POU Name="MAIN" Id="{fc0a78e3-9cb5-429c-9c84-74a2045fdce4}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	GatewayIn						:ST_StatusBits;
+	GatewayOut						:ST_ControlBits;
+
+	uPNIn							:U_GatewayDataIn;
+	uPNOut							:U_GatewayDataOut;	
+	                            	
+	uEIPIn							:U_GatewayDataIn;
+	uEIPOut							:U_GatewayDataOut;	
+		
+    {IF defined (PN)}
+        sVariantUsed                :STRING := 'PN';	
+    {ELSIF defined (EIP)}
+        sVariantUsed                :STRING := 'EIP';	
+	{ELSIF defined (NoGateway)}	
+		 sVariantUsed               :STRING := 'NoGateway';	
+    {END_IF}
+
+	Step							:INT;
+	stepTimer						: TON := (PT := TIME#2S0MS);		
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[//Example of using the stucture of bits within the union
+CASE Step OF
+	0:
+		GatewayOut.Start:=TRUE;
+		stepTimer(IN:=TRUE);
+		IF stepTimer.Q THEN
+			GatewayOut.Start:=FALSE;
+			stepTimer(IN:=FALSE);
+	 		Step:=1;
+		END_IF
+	1:
+		GatewayOut.Stop:=TRUE;
+		stepTimer(IN:=TRUE);
+		IF stepTimer.Q THEN
+			GatewayOut.stop:=FALSE;
+			stepTimer(IN:=FALSE);
+	 		Step:=2;
+		END_IF	
+	2:
+		GatewayOut.Reset:=TRUE;
+		stepTimer(IN:=TRUE);
+		IF stepTimer.Q THEN
+			GatewayOut.Reset:=FALSE;
+			stepTimer(IN:=FALSE);
+	 		Step:=0;
+		END_IF
+	
+END_CASE
+
+
+
+//Map data based on current running varrient
+
+{IF defined (PN)}
+  	GatewayIn 			:=uPNIn.Status;
+	uPNOut.Control		:=GatewayOut;
+{ELSIF defined (EIP)}
+  	GatewayIn 			:=uEIPIn.Status;
+	uEIPOut.Control		:=GatewayOut;
+{END_IF}]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

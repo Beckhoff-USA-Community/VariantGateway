@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.10">
+  <DUT Name="U_GatewayDataIn" Id="{cc8a73ed-35d5-4f21-9f96-5f115077d356}">
+    <Declaration><![CDATA[TYPE U_GatewayDataIn :
+UNION
+	Status				:ST_StatusBits;
+	arBytes 	AT%I*	:ARRAY[0..31] OF BYTE;
+END_UNION
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

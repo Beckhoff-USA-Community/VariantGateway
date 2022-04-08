@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.10">
+  <POU Name="MAIN" Id="{6cc1c42e-0152-40d1-93ad-a826eb34c569}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+
+	arGatewayIn					:ARRAY[0..31] OF BYTE;
+    arGatewayOut				:ARRAY[0..31] OF BYTE;
+
+	arPNIn				AT%I*	:ARRAY[0..31] OF BYTE;
+	arPNOut				AT%Q*	:ARRAY[0..31] OF BYTE;	
+
+	arEIPIn				AT%I*	:ARRAY[0..31] OF BYTE;
+	arEIPOut			AT%Q*	:ARRAY[0..31] OF BYTE;
+	
+    {IF defined (PN)}
+        sVariantUsed             :STRING := 'PN';	
+    {ELSIF defined (EIP)}        
+        sVariantUsed             :STRING := 'EIP';
+    {END_IF}	
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+
+{IF defined (PN)}
+  	arGatewayIn :=arPNIn;
+{ELSIF defined (EIP)}
+    arGatewayIn := arEIPIn;
+{END_IF}
+
+	arGatewayOut:=arGatewayIn;
+	arEIPOut	:=arGatewayOut;
+	arPNOut		:=arGatewayOut;	]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.25" ClassName="CDevEthernetProtocolEipMasterDef" SubType="133" TcProjectVariant="EIP">
+	<Device Id="2" DevType="133" AmsPort="28674" AmsNetId="5.24.131.22.3.1" RemoteName="Device 2 (TC3 EIP Scanner)">
+		<Name>__FILENAME__</Name>
+		<ProjectVariant PvUseDisable="true" PvUseLink="true">
+			<Variant>
+				<Name>EIP</Name>
+				<Disable>0</Disable>
+				<AddressInfo PromiscuousMode="false" VirtualDeviceName="false">
+					<Pnp>
+						<DeviceDesc>X001 (TwinCAT-Intel PCI Ethernet Adapter (Gigabit) </DeviceDesc>
+						<DeviceName>\DEVICE\{3C669100-7B40-4D98-8408-825FD7006E03}</DeviceName>
+						<DeviceData>000105188316</DeviceData>
+					</Pnp>
+				</AddressInfo>
+			</Variant>
+			<Variant>
+				<Name>NoGateWay</Name>
+				<Disable>1</Disable>
+				<AddressInfo PromiscuousMode="false" VirtualDeviceName="false">
+					<Pnp>
+						<DeviceDesc></DeviceDesc>
+						<DeviceName></DeviceName>
+						<DeviceData>000000000000</DeviceData>
+					</Pnp>
+				</AddressInfo>
+			</Variant>
+			<Variant>
+				<Name>PN</Name>
+				<Disable>1</Disable>
+				<AddressInfo PromiscuousMode="false" VirtualDeviceName="false">
+					<Pnp>
+						<DeviceDesc>X001 (TwinCAT-Intel PCI Ethernet Adapter (Gigabit) </DeviceDesc>
+						<DeviceName>\DEVICE\{3C669100-7B40-4D98-8408-825FD7006E03}</DeviceName>
+						<DeviceData>000105188316</DeviceData>
+					</Pnp>
+				</AddressInfo>
+			</Variant>
+		</ProjectVariant>
+		<AddressInfo>
+			<Pnp>
+				<DeviceDesc>X001 (TwinCAT-Intel PCI Ethernet Adapter (Gigabit) </DeviceDesc>
+				<DeviceName>\DEVICE\{3C669100-7B40-4D98-8408-825FD7006E03}</DeviceName>
+				<DeviceData>000105188316</DeviceData>
+			</Pnp>
+		</AddressInfo>
+		<Image Id="2" AddrType="1" ImageType="3">
+			<Name>Device 2 (TC3 EIP Scanner)-Image</Name>
+		</Image>
+		<Box File="Box 2 (TC EtherNet%_2FIP Slave).xti" Id="2"/>
+		<Ethernet DeviceDesc="X001 (TwinCAT-Intel PCI Ethernet Adapter (Gigabit) "/>
+		<EtherNetIPMasterDev m_EthIpMasterDevPar="020000004465766963652032202854433320454950205363616e6e6572290000000000000c0000006c00000089180000030100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020105188316011110ac0000ffff000000000000800001001e000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"/>
+	</Device>
+</TcSmItem>

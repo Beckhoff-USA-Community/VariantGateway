@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.25" ClassName="CDevEthernetProtocolPnMasterDef" SubType="113" TcProjectVariant="PN">
+	<Device Id="1" DevType="113" AmsPort="28673" AmsNetId="5.24.131.22.2.1" RemoteName="Device 1 (Profinet Controller)">
+		<Name>__FILENAME__</Name>
+		<ProjectVariant PvUseDisable="true" PvUseLink="true">
+			<Variant>
+				<Name>EIP</Name>
+				<Disable>1</Disable>
+				<AddressInfo PromiscuousMode="false" VirtualDeviceName="false">
+					<Pnp>
+						<DeviceDesc></DeviceDesc>
+						<DeviceName></DeviceName>
+						<DeviceData>000000000000</DeviceData>
+					</Pnp>
+				</AddressInfo>
+			</Variant>
+			<Variant>
+				<Name>NoGateWay</Name>
+				<Disable>1</Disable>
+				<AddressInfo PromiscuousMode="false" VirtualDeviceName="false">
+					<Pnp>
+						<DeviceDesc>X000 (TwinCAT-Intel PCI Ethernet Adapter (Gigabit))</DeviceDesc>
+						<DeviceName>\DEVICE\{A8CA4E04-C315-44E6-B263-ABBAA909E56B}</DeviceName>
+						<DeviceData>000105188317</DeviceData>
+					</Pnp>
+				</AddressInfo>
+			</Variant>
+			<Variant>
+				<Name>PN</Name>
+				<Disable>0</Disable>
+				<AddressInfo PromiscuousMode="false" VirtualDeviceName="false">
+					<Pnp>
+						<DeviceDesc>X001 (TwinCAT-Intel PCI Ethernet Adapter (Gigabit) </DeviceDesc>
+						<DeviceName>\DEVICE\{3C669100-7B40-4D98-8408-825FD7006E03}</DeviceName>
+						<DeviceData>000105188316</DeviceData>
+					</Pnp>
+				</AddressInfo>
+			</Variant>
+		</ProjectVariant>
+		<DevData>000000000000000000000000409c00005c4445564943455c7b33433636393130302d374234302d344439382d383430382d3832354644373030364530337d000000000000000001005d79fea90000ffff000105188316040000000000000000000000000000010000000000000000000000000000000000000000000000000000</DevData>
+		<Image Id="1" AddrType="1" ImageType="3" SizeIn="36" SizeOut="42">
+			<Name>Image</Name>
+		</Image>
+		<Box File="tcpniodevice.xti" Id="1"/>
+		<Profinet PLCPortNr="851" AddPortCount="1">
+			<Ethernet DeviceDesc="X001 (TwinCAT-Intel PCI Ethernet Adapter (Gigabit) "/>
+			<PNController ClientPort="60000" ServerPort="61000" VendorId="288" DeviceId="35" IPData="00000000aca71101ffff000000000000" SystemName="tc-pncontroller" IRTSendClock="32">
+				<RTData CableLength="10"/>
+			</PNController>
+		</Profinet>
+	</Device>
+</TcSmItem>

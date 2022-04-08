@@ -1,0 +1,764 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.25" ClassName="CPnIoBoxDef" SubType="9123">
+	<Box Id="1" BoxType="9123">
+		<Name>__FILENAME__</Name>
+		<Comment><![CDATA[GSDML Name: GSDML-V2.33-beckhoff-TCPNDevice-20200116.xml
+Path: $(TWINCAT3DIR)Config\Io\Profinet\
+VendorName: Beckhoff Automation
+OrderNumber: TwinCAT PN Device
+HW Release Version: 1
+SW Release Version: V5.00]]></Comment>
+		<ImageId>107</ImageId>
+		<Vars VarGrpType="1">
+			<Name>Inputs</Name>
+			<Var>
+				<Name>PnIoBoxState</Name>
+				<Comment><![CDATA[0x0001 = Device is in I/O exchange
+0x0002 = Device is blinking
+0x0004 = Provider State -> 0 = Stop, 1 = Run
+0x0008 = Problem Indicator -> 0 = OK, 1 = Error
+]]></Comment>
+				<Type>UINT</Type>
+			</Var>
+		</Vars>
+		<Vars VarGrpType="2">
+			<Name>Outputs</Name>
+			<Var>
+				<Name>PnIoBoxCtrl</Name>
+				<Comment><![CDATA[0x00XX = Last two hex characters of station name
+]]></Comment>
+				<Type>UINT</Type>
+			</Var>
+		</Vars>
+		<Profinet DeviceId="33" VendorId="288" FrameOffset="32768" Flags="1040" ProtocolType="4" BoxOnDeviceTyp="115" MaxPhysSlotNr="255" InstanceServerPort="50000" InstanceClientPort="50001" InstanceNumberOfARs="5" InstanceNumberOfAPIs="1" MinDeviceInterval="32" NrOfGsdmlDap="6" BoxTypeInfo="TwinCAT PLC PROFINET I/O Device with I/Os, V2.32, 1 port diagnostic supported" MacAdd5="156" GSDMLPath="$(TWINCAT3DIR)Config\Io\Profinet\GSDML-V2.33-beckhoff-TCPNDevice-20200116.xml" ImagePath="C:\TwinCAT\3.1\Config\Io\Profinet\GSDML-0120-0021-TCPNDevice.bmp" MainFamily="I/O" ProductFamily="TwinCAT Profinet I/O" OrderNr="TwinCAT PN Device" DefaultDNSName="tcpniodevice" VendorName="Beckhoff Automation" FamDescription="TwinCAT products" GraphicFile="GSDML-0120-0021-TCPNDevice" SWVersion="V5.00" HWVersion="1" AltLanguage="7">
+			<GsdmlValue HelpInfo="disable or enable" Id="Disabled_Enabled" Content="00000100">
+				<RecordText>disabled</RecordText>
+				<RecordText>enabled</RecordText>
+			</GsdmlValue>
+			<UsedGsdmlModule ModuleIdentNumber="6" ModuleName="DAP Module" InfoText="TwinCAT PLC PROFINET I/O Device with I/Os, V2.32, 1 port diagnostic supported" OrderNumber="TwinCAT PN Device">
+				<Slot>0</Slot>
+			</UsedGsdmlModule>
+			<UsedGsdmlModule ModuleIdentNumber="1796" Id="BYTE_IO32" ModuleName="32 Byte In- and Output" InfoText="32 Byte In- and Output" ModuleCategory="Byte modules">
+				<Slot>1</Slot>
+				<Slot>2</Slot>
+				<Slot>3</Slot>
+				<Slot>4</Slot>
+				<Slot>5</Slot>
+				<Slot>6</Slot>
+				<Slot>7</Slot>
+				<Slot>8</Slot>
+				<Slot>9</Slot>
+				<Slot>10</Slot>
+				<Slot>11</Slot>
+				<Slot>12</Slot>
+				<Slot>13</Slot>
+				<Slot>14</Slot>
+				<Slot>15</Slot>
+				<Slot>16</Slot>
+				<Slot>17</Slot>
+				<Slot>18</Slot>
+				<Slot>19</Slot>
+				<Slot>20</Slot>
+				<Slot>21</Slot>
+				<Slot>22</Slot>
+				<Slot>23</Slot>
+				<Slot>24</Slot>
+				<Slot>25</Slot>
+				<Slot>26</Slot>
+				<Slot>27</Slot>
+				<Slot>28</Slot>
+				<Slot>29</Slot>
+				<Slot>30</Slot>
+				<Slot>31</Slot>
+				<Slot>32</Slot>
+				<Slot>33</Slot>
+				<Slot>34</Slot>
+				<Slot>35</Slot>
+				<Slot>36</Slot>
+				<Slot>37</Slot>
+				<Slot>38</Slot>
+				<Slot>39</Slot>
+				<Slot>40</Slot>
+				<Slot>41</Slot>
+				<Slot>42</Slot>
+				<Slot>43</Slot>
+				<Slot>44</Slot>
+				<Slot>45</Slot>
+				<Slot>46</Slot>
+				<Slot>47</Slot>
+				<Slot>48</Slot>
+				<Slot>49</Slot>
+				<Slot>50</Slot>
+				<Slot>51</Slot>
+				<Slot>52</Slot>
+				<Slot>53</Slot>
+				<Slot>54</Slot>
+				<Slot>55</Slot>
+				<Slot>56</Slot>
+				<Slot>57</Slot>
+				<Slot>58</Slot>
+				<Slot>59</Slot>
+				<Slot>60</Slot>
+				<Slot>61</Slot>
+				<Slot>62</Slot>
+				<Slot>63</Slot>
+				<Slot>64</Slot>
+				<Slot>65</Slot>
+				<Slot>66</Slot>
+				<Slot>67</Slot>
+				<Slot>68</Slot>
+				<Slot>69</Slot>
+				<Slot>70</Slot>
+				<Slot>71</Slot>
+				<Slot>72</Slot>
+				<Slot>73</Slot>
+				<Slot>74</Slot>
+				<Slot>75</Slot>
+				<Slot>76</Slot>
+				<Slot>77</Slot>
+				<Slot>78</Slot>
+				<Slot>79</Slot>
+				<Slot>80</Slot>
+				<Slot>81</Slot>
+				<Slot>82</Slot>
+				<Slot>83</Slot>
+				<Slot>84</Slot>
+				<Slot>85</Slot>
+				<Slot>86</Slot>
+				<Slot>87</Slot>
+				<Slot>88</Slot>
+				<Slot>89</Slot>
+				<Slot>90</Slot>
+				<Slot>91</Slot>
+				<Slot>92</Slot>
+				<Slot>93</Slot>
+				<Slot>94</Slot>
+				<Slot>95</Slot>
+				<Slot>96</Slot>
+				<Slot>97</Slot>
+				<Slot>98</Slot>
+				<Slot>99</Slot>
+				<Slot>100</Slot>
+				<Slot>101</Slot>
+				<Slot>102</Slot>
+				<Slot>103</Slot>
+				<Slot>104</Slot>
+				<Slot>105</Slot>
+				<Slot>106</Slot>
+				<Slot>107</Slot>
+				<Slot>108</Slot>
+				<Slot>109</Slot>
+				<Slot>110</Slot>
+				<Slot>111</Slot>
+				<Slot>112</Slot>
+				<Slot>113</Slot>
+				<Slot>114</Slot>
+				<Slot>115</Slot>
+				<Slot>116</Slot>
+				<Slot>117</Slot>
+				<Slot>118</Slot>
+				<Slot>119</Slot>
+				<Slot>120</Slot>
+				<Slot>121</Slot>
+				<Slot>122</Slot>
+				<Slot>123</Slot>
+				<Slot>124</Slot>
+				<Slot>125</Slot>
+				<Slot>126</Slot>
+				<Slot>127</Slot>
+				<Slot>128</Slot>
+				<Slot>129</Slot>
+				<Slot>130</Slot>
+				<Slot>131</Slot>
+				<Slot>132</Slot>
+				<Slot>133</Slot>
+				<Slot>134</Slot>
+				<Slot>135</Slot>
+				<Slot>136</Slot>
+				<Slot>137</Slot>
+				<Slot>138</Slot>
+				<Slot>139</Slot>
+				<Slot>140</Slot>
+				<Slot>141</Slot>
+				<Slot>142</Slot>
+				<Slot>143</Slot>
+				<Slot>144</Slot>
+				<Slot>145</Slot>
+				<Slot>146</Slot>
+				<Slot>147</Slot>
+				<Slot>148</Slot>
+				<Slot>149</Slot>
+				<Slot>150</Slot>
+				<Slot>151</Slot>
+				<Slot>152</Slot>
+				<Slot>153</Slot>
+				<Slot>154</Slot>
+				<Slot>155</Slot>
+				<Slot>156</Slot>
+				<Slot>157</Slot>
+				<Slot>158</Slot>
+				<Slot>159</Slot>
+				<Slot>160</Slot>
+				<Slot>161</Slot>
+				<Slot>162</Slot>
+				<Slot>163</Slot>
+				<Slot>164</Slot>
+				<Slot>165</Slot>
+				<Slot>166</Slot>
+				<Slot>167</Slot>
+				<Slot>168</Slot>
+				<Slot>169</Slot>
+				<Slot>170</Slot>
+				<Slot>171</Slot>
+				<Slot>172</Slot>
+				<Slot>173</Slot>
+				<Slot>174</Slot>
+				<Slot>175</Slot>
+				<Slot>176</Slot>
+				<Slot>177</Slot>
+				<Slot>178</Slot>
+				<Slot>179</Slot>
+				<Slot>180</Slot>
+				<Slot>181</Slot>
+				<Slot>182</Slot>
+				<Slot>183</Slot>
+				<Slot>184</Slot>
+				<Slot>185</Slot>
+				<Slot>186</Slot>
+				<Slot>187</Slot>
+				<Slot>188</Slot>
+				<Slot>189</Slot>
+				<Slot>190</Slot>
+				<Slot>191</Slot>
+				<Slot>192</Slot>
+				<Slot>193</Slot>
+				<Slot>194</Slot>
+				<Slot>195</Slot>
+				<Slot>196</Slot>
+				<Slot>197</Slot>
+				<Slot>198</Slot>
+				<Slot>199</Slot>
+				<Slot>200</Slot>
+				<Slot>201</Slot>
+				<Slot>202</Slot>
+				<Slot>203</Slot>
+				<Slot>204</Slot>
+				<Slot>205</Slot>
+				<Slot>206</Slot>
+				<Slot>207</Slot>
+				<Slot>208</Slot>
+				<Slot>209</Slot>
+				<Slot>210</Slot>
+				<Slot>211</Slot>
+				<Slot>212</Slot>
+				<Slot>213</Slot>
+				<Slot>214</Slot>
+				<Slot>215</Slot>
+				<Slot>216</Slot>
+				<Slot>217</Slot>
+				<Slot>218</Slot>
+				<Slot>219</Slot>
+				<Slot>220</Slot>
+				<Slot>221</Slot>
+				<Slot>222</Slot>
+				<Slot>223</Slot>
+				<Slot>224</Slot>
+				<Slot>225</Slot>
+				<Slot>226</Slot>
+				<Slot>227</Slot>
+				<Slot>228</Slot>
+				<Slot>229</Slot>
+				<Slot>230</Slot>
+				<Slot>231</Slot>
+				<Slot>232</Slot>
+				<Slot>233</Slot>
+				<Slot>234</Slot>
+				<Slot>235</Slot>
+				<Slot>236</Slot>
+				<Slot>237</Slot>
+				<Slot>238</Slot>
+				<Slot>239</Slot>
+				<Slot>240</Slot>
+				<Slot>241</Slot>
+				<Slot>242</Slot>
+				<Slot>243</Slot>
+				<Slot>244</Slot>
+				<Slot>245</Slot>
+				<Slot>246</Slot>
+				<Slot>247</Slot>
+				<Slot>248</Slot>
+				<Slot>249</Slot>
+				<Slot>250</Slot>
+				<Slot>251</Slot>
+				<Slot>252</Slot>
+				<Slot>253</Slot>
+				<Slot>254</Slot>
+				<Slot>255</Slot>
+			</UsedGsdmlModule>
+			<UsedGsdmlSubModule SubModuleIdentNumber="1" SubSlotNumber="1" TypeOfSubmodule="3" Id="DAP 6" SubModuleName="TwinCAT Device V2.32, 1 Port, at least FW V5.00" InfoText="TwinCAT PLC PROFINET I/O Device with I/Os, V2.32, 1 port diagnostic supported">
+				<Record Name="Device parameters" Length="4" Index="4096">
+					<ConstData>0</ConstData>
+					<ConstData>1</ConstData>
+					<ConstData>0</ConstData>
+					<ConstData>0</ConstData>
+					<RecordDataDef Name="Dummy for certification" DataType="Bit" MaxAllowedValue="1" ByteOffset="3" BitLength="1" Visible="true" Changeable="true" ValueItemTarget="Disabled_Enabled"/>
+				</Record>
+			</UsedGsdmlSubModule>
+			<UsedGsdmlSubModule SubModuleIdentNumber="1" SubSlotNumber="1" TypeOfSubmodule="3" Id="BYTE_IO32" SubModuleName="32 Byte In- and Output" InfoText="32 Byte In- and Output">
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemIn/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+				<DataItemOut/>
+			</UsedGsdmlSubModule>
+			<API Id="1">
+				<Name>API</Name>
+				<ImageId>4</ImageId>
+				<Module Id="#x031d0001" DAP="true" ModuleIdentNumber="6" ModuleInfo="TwinCAT PLC PROFINET I/O Device with I/Os, V2.32, 1 port diagnostic supported">
+					<Name>Term 1 (DAP Module)</Name>
+					<Comment><![CDATA[GSDML: GSDML-V2.33-beckhoff-TCPNDevice-20200116.xml
+Module Info: TwinCAT PLC PROFINET I/O Device with I/Os, V2.32, 1 port diagnostic supported
+OrderNumber: TwinCAT PN Device]]></Comment>
+					<ImageId>182</ImageId>
+					<SubModule Id="#x031c0001" SubModuleIdentNumber="1" TypeOfSubModule="3" SubSlotNumber="1" IsFixSubmodule="true" SubModuleID="DAP 6" AddSubModFlags="124">
+						<Name>Subterm 1 (TwinCAT Device V2.32, 1 Port, at least FW V5.00)</Name>
+						<Comment><![CDATA[GSDML: GSDML-V2.33-beckhoff-TCPNDevice-20200116.xml
+Submodule Info: TwinCAT PLC PROFINET I/O Device with I/Os, V2.32, 1 port diagnostic supported
+]]></Comment>
+						<ImageId>183</ImageId>
+						<Record Length="4" Index="4096" ConstData="00010000"/>
+						<Vars VarGrpType="1">
+							<Name>Inputs</Name>
+						</Vars>
+						<Vars VarGrpType="2">
+							<Name>Outputs</Name>
+						</Vars>
+					</SubModule>
+					<SubModule Id="#x031c0002" SubModuleIdentNumber="32768" TypeOfSubModule="1" SubSlotNumber="32768" IsFixSubmodule="true" SubModuleID="IDS_6I" InterfaceData="0100000000000000000000000000000000000000000098000000000000000000">
+						<Name>Subterm 2 (Interface)</Name>
+						<Comment><![CDATA[GSDML: GSDML-V2.33-beckhoff-TCPNDevice-20200116.xml
+]]></Comment>
+						<ImageId>183</ImageId>
+						<Vars VarGrpType="1">
+							<Name>Inputs</Name>
+						</Vars>
+						<Vars VarGrpType="2">
+							<Name>Outputs</Name>
+						</Vars>
+					</SubModule>
+					<SubModule Id="#x031c0003" SubModuleIdentNumber="32769" TypeOfSubModule="2" SubSlotNumber="32769" IsFixSubmodule="true" SubModuleID="IDS_6P" PortData="00000000000000000000000000000000000000000000000000000000">
+						<Name>Subterm 3 (Port 1)</Name>
+						<Comment><![CDATA[GSDML: GSDML-V2.33-beckhoff-TCPNDevice-20200116.xml
+]]></Comment>
+						<ImageId>183</ImageId>
+						<Vars VarGrpType="1">
+							<Name>Inputs</Name>
+						</Vars>
+						<Vars VarGrpType="2">
+							<Name>Outputs</Name>
+						</Vars>
+					</SubModule>
+				</Module>
+				<Module Id="#x031d0002" ModuleIdentNumber="1796" SlotNumber="1" ModuleInfo="32 Byte In- and Output" ModuleID="BYTE_IO32" DirectDeletable="true">
+					<Name>Term 2 (32 Byte In- and Output)</Name>
+					<Comment><![CDATA[GSDML: GSDML-V2.33-beckhoff-TCPNDevice-20200116.xml
+Module Info: 32 Byte In- and Output
+]]></Comment>
+					<ImageId>182</ImageId>
+					<SubModule Id="#x031c0004" SubModuleIdentNumber="1" TypeOfSubModule="3" SubSlotNumber="1" IsFixSubmodule="true" SubModuleID="BYTE_IO32">
+						<Name>Subterm 4 (32 Byte In- and Output)</Name>
+						<Comment><![CDATA[GSDML: GSDML-V2.33-beckhoff-TCPNDevice-20200116.xml
+Submodule Info: 32 Byte In- and Output
+]]></Comment>
+						<ImageId>183</ImageId>
+						<Vars VarGrpType="1">
+							<Name>Inputs</Name>
+							<Var>
+								<Name>1 Byte Output[0]</Name>
+								<Type>USINT</Type>
+								<BitOffs>16</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[1]</Name>
+								<Type>USINT</Type>
+								<BitOffs>24</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[2]</Name>
+								<Type>USINT</Type>
+								<BitOffs>32</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[3]</Name>
+								<Type>USINT</Type>
+								<BitOffs>40</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[4]</Name>
+								<Type>USINT</Type>
+								<BitOffs>48</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[5]</Name>
+								<Type>USINT</Type>
+								<BitOffs>56</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[6]</Name>
+								<Type>USINT</Type>
+								<BitOffs>64</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[7]</Name>
+								<Type>USINT</Type>
+								<BitOffs>72</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[8]</Name>
+								<Type>USINT</Type>
+								<BitOffs>80</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[9]</Name>
+								<Type>USINT</Type>
+								<BitOffs>88</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[10]</Name>
+								<Type>USINT</Type>
+								<BitOffs>96</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[11]</Name>
+								<Type>USINT</Type>
+								<BitOffs>104</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[12]</Name>
+								<Type>USINT</Type>
+								<BitOffs>112</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[13]</Name>
+								<Type>USINT</Type>
+								<BitOffs>120</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[14]</Name>
+								<Type>USINT</Type>
+								<BitOffs>128</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[15]</Name>
+								<Type>USINT</Type>
+								<BitOffs>136</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[16]</Name>
+								<Type>USINT</Type>
+								<BitOffs>144</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[17]</Name>
+								<Type>USINT</Type>
+								<BitOffs>152</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[18]</Name>
+								<Type>USINT</Type>
+								<BitOffs>160</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[19]</Name>
+								<Type>USINT</Type>
+								<BitOffs>168</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[20]</Name>
+								<Type>USINT</Type>
+								<BitOffs>176</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[21]</Name>
+								<Type>USINT</Type>
+								<BitOffs>184</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[22]</Name>
+								<Type>USINT</Type>
+								<BitOffs>192</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[23]</Name>
+								<Type>USINT</Type>
+								<BitOffs>200</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[24]</Name>
+								<Type>USINT</Type>
+								<BitOffs>208</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[25]</Name>
+								<Type>USINT</Type>
+								<BitOffs>216</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[26]</Name>
+								<Type>USINT</Type>
+								<BitOffs>224</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[27]</Name>
+								<Type>USINT</Type>
+								<BitOffs>232</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[28]</Name>
+								<Type>USINT</Type>
+								<BitOffs>240</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[29]</Name>
+								<Type>USINT</Type>
+								<BitOffs>248</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[30]</Name>
+								<Type>USINT</Type>
+								<BitOffs>256</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Output[31]</Name>
+								<Type>USINT</Type>
+								<BitOffs>264</BitOffs>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="2">
+							<Name>Outputs</Name>
+							<Var>
+								<Name>1 Byte Input[0]</Name>
+								<Type>USINT</Type>
+								<BitOffs>16</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[1]</Name>
+								<Type>USINT</Type>
+								<BitOffs>24</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[2]</Name>
+								<Type>USINT</Type>
+								<BitOffs>32</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[3]</Name>
+								<Type>USINT</Type>
+								<BitOffs>40</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[4]</Name>
+								<Type>USINT</Type>
+								<BitOffs>48</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[5]</Name>
+								<Type>USINT</Type>
+								<BitOffs>56</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[6]</Name>
+								<Type>USINT</Type>
+								<BitOffs>64</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[7]</Name>
+								<Type>USINT</Type>
+								<BitOffs>72</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[8]</Name>
+								<Type>USINT</Type>
+								<BitOffs>80</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[9]</Name>
+								<Type>USINT</Type>
+								<BitOffs>88</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[10]</Name>
+								<Type>USINT</Type>
+								<BitOffs>96</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[11]</Name>
+								<Type>USINT</Type>
+								<BitOffs>104</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[12]</Name>
+								<Type>USINT</Type>
+								<BitOffs>112</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[13]</Name>
+								<Type>USINT</Type>
+								<BitOffs>120</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[14]</Name>
+								<Type>USINT</Type>
+								<BitOffs>128</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[15]</Name>
+								<Type>USINT</Type>
+								<BitOffs>136</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[16]</Name>
+								<Type>USINT</Type>
+								<BitOffs>144</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[17]</Name>
+								<Type>USINT</Type>
+								<BitOffs>152</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[18]</Name>
+								<Type>USINT</Type>
+								<BitOffs>160</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[19]</Name>
+								<Type>USINT</Type>
+								<BitOffs>168</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[20]</Name>
+								<Type>USINT</Type>
+								<BitOffs>176</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[21]</Name>
+								<Type>USINT</Type>
+								<BitOffs>184</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[22]</Name>
+								<Type>USINT</Type>
+								<BitOffs>192</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[23]</Name>
+								<Type>USINT</Type>
+								<BitOffs>200</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[24]</Name>
+								<Type>USINT</Type>
+								<BitOffs>208</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[25]</Name>
+								<Type>USINT</Type>
+								<BitOffs>216</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[26]</Name>
+								<Type>USINT</Type>
+								<BitOffs>224</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[27]</Name>
+								<Type>USINT</Type>
+								<BitOffs>232</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[28]</Name>
+								<Type>USINT</Type>
+								<BitOffs>240</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[29]</Name>
+								<Type>USINT</Type>
+								<BitOffs>248</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[30]</Name>
+								<Type>USINT</Type>
+								<BitOffs>256</BitOffs>
+							</Var>
+							<Var>
+								<Name>1 Byte Input[31]</Name>
+								<Type>USINT</Type>
+								<BitOffs>264</BitOffs>
+							</Var>
+						</Vars>
+					</SubModule>
+				</Module>
+			</API>
+		</Profinet>
+	</Box>
+</TcSmItem>
