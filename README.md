@@ -1,10 +1,9 @@
 # About This Repository
 
-This is an example on how you could use the variant manager to setup a signle NIC port for multiple differnt protocals. 
-Based on what variant is selected, will determine what protocal will be used. 
+This is an example on how you could use the variant manager to setup a signle NIC port for multiple differnt protocols. 
+Based on what variant is selected, will determine what protocol will be used. 
 The variant manager is setup to enable and disable the IO devices respectively. 
-i.e. if you need EIP, then only EIP is enabled and all other IO devices will be disabled.
-All devices are configured to use the same NIC port.
+All devices are configured to use the same NIC port/Adapter.
 
 This sample is created by [Beckhoff Automation LLC.](https://www.beckhoff.com/en-us/), and is provided as-is under the Zero-Clause BSD license.
 
