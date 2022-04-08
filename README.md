@@ -5,6 +5,10 @@ Based on what variant is selected, will determine what protocol will be used.
 The variant manager is setup to enable and disable the IO devices respectively. 
 All devices are configured to use the same NIC port/Adapter.
 
+This repository contains two soultions.
+Soultion "SimMaster" implements controllers or clients (Master devices).
+Soultion "VariantGateway" implements devices or servers (Slave devices).
+
 This sample is created by [Beckhoff Automation LLC.](https://www.beckhoff.com/en-us/), and is provided as-is under the Zero-Clause BSD license.
 
 # How to get support
