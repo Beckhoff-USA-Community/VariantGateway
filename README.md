@@ -13,6 +13,7 @@ To test out the two projects, a setup could look like this:
 ![image](https://user-images.githubusercontent.com/19829308/162477781-59f2b2d3-df79-4591-a717-c8e999e4f798.png)
 
 
+![6B1EEE30-A2A5-4CCF-A9D2-88000595D03A](https://user-images.githubusercontent.com/19829308/162747861-f79b3bcf-06cf-4103-91ab-2dff5459816d.GIF)
 
 This sample is created by [Beckhoff Automation LLC.](https://www.beckhoff.com/en-us/), and is provided as-is under the Zero-Clause BSD license.
 
